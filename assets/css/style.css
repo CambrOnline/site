@@ -313,6 +313,14 @@ body.nav-active { overflow: hidden; }
   object-fit: cover;
 }
 
+.img-coverB {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  float: right;
+}
+
+
 .section-subtitle {
   position: relative;
   color: var(--gold-crayola);
@@ -411,6 +419,21 @@ body.nav-active { overflow: hidden; }
 .grid-list {
   display: grid;
   gap: 40px;
+}
+
+.grid-listB {
+  display: flex;
+}
+
+.grid-listB li {
+  margin: 0 auto; /* Agregar margin: 0 auto para centrar horizontalmente */
+  max-width: 500px; /* Opcional: ajustar el ancho máximo para controlar el centrado */
+}
+
+/* Opcional: para centrar verticalmente también */
+.grid-listB li {
+  display: flex;
+  align-items: center;
 }
 
 .hover\:shine { position: relative; }
@@ -1460,6 +1483,14 @@ textarea.input-field {
 
 
 
+  .section-textB {
+    max-width: 900px;
+    margin: 0 auto; /* Centrar horizontalmente */ 
+    letter-spacing: var(--letterSpacing-2);
+    margin-block-end: 15px;
+  }
+
+
   /**
    * REUSED STYLE
    */
@@ -1827,6 +1858,7 @@ textarea.input-field {
     left: -40px;
     animation: move 5s linear infinite;
   }
+
 
 
 
